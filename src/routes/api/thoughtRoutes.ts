@@ -6,7 +6,7 @@ import {
   createCourse,
   updateCourse,
   deleteCourse,
-} from '../../controllers/thoughtController.js';
+} from '../../controllers/thoughtsController.js';
 
 // /api/courses
 router.route('/').get(getAllCourses).post(createCourse);
