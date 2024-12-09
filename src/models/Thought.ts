@@ -1,7 +1,7 @@
-import { Schema, Types, model, type Document } from 'mongoose';
+import { Schema, Types, model, ObjectId, type Document } from 'mongoose';
 
 interface IReaction extends Document {
-    reactionId: Schema.Types.ObjectId,
+    reactionId: ObjectId,
     reactionBody: string,
     username: string,
     createdAt: Date
@@ -11,7 +11,7 @@ interface IThought extends Document {
     thoughtText: string,
     createdAt: Date,
     username: string,
-    reactions: Schema.Types.ObjectId[]
+    reactions: IReaction[]
 }
 
 const reactionSchema = new Schema<IReaction>(
