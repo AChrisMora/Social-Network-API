@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an API for a social network web app. It uses espress, mongo and mongoose.
+This is an API for a social network web app. It uses express, mongo and mongoose.
 
 ## Table of Contents
 
